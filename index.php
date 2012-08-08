@@ -6,7 +6,7 @@
 <div id="wrapper" class="hfeed">
     <div id="header">
         <div id="masthead">
-         
+          
             <div id="branding">
             </div><!-- #branding -->
              
