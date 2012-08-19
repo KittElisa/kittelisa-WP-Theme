@@ -23,26 +23,18 @@
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />   
 </head>
 <body>
-<div id="wrapper" class="hfeed">
-    <div id="header">
-        <div id="masthead">
-         
-                        <div id="branding">
-                <div id="blog-title"><span><a href="<?php bloginfo( 'url' ) ?>/" title="<?php bloginfo( 'name' ) ?>" rel="home"><?php bloginfo( 'name' ) ?></a></span></div>
-<?php if ( is_home() || is_front_page() ) { ?>
-                    <h1 id="blog-description"><?php bloginfo( 'description' ) ?></h1>
-<?php } else { ?> 
+    <div id="wrapper" class="hfeed">
+        <header>
+            <div id="blog-title"><span><a href="<?php bloginfo( 'url' ) ?>/" title="<?php bloginfo( 'name' ) ?>" rel="home"><?php bloginfo( 'name' ) ?></a></span></div>
+                <?php if ( is_home() || is_front_page() ) { ?>
+                     <h1 id="blog-description"><?php bloginfo( 'description' ) ?></h1>
+                <?php } else { ?> 
                     <div id="blog-description"><?php bloginfo( 'description' ) ?></div>
-<?php } ?>
-            </div><!-- #branding -->
-             
-           <div id="access">
-   			 	<div class="skip-link"><a href="#content" title="<?php _e( 'Skip to content', 'your-theme' ) ?>"><?php _e( 'Skip to content', 'your-theme' ) ?></a>
-   			 	</div>
-    		 	<?php wp_page_menu( 'sort_column=menu_order' ); ?>           
-			</div><!-- #access -->
-             
-        </div><!-- #masthead -->   
-    </div><!-- #header -->
-     
-    <div id="main">
+                <?php } ?>
+        </header><!-- #header -->
+        <nav><!--navigation bar start-->
+            <div class="skip-link"><a href="#content" title="<?php _e( 'Skip to content', 'your-theme' ) ?>"><?php _e( 'Skip to content', 'your-theme' ) ?></a>
+            </div>
+            <?php wp_page_menu( 'sort_column=menu_order' ); ?>           
+        </nav><!-- #navigation bar ends -->
+    <section id="posts">

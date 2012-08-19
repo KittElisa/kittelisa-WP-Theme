@@ -1,14 +1,13 @@
-</div><!-- #main -->
+		</section><!-- #section posts -->
 
-    <div id="footer">
-        <div id="colophon">
+		    <footer>
+		        <section id="colophon">
 
+		            <article id="site-info">
+		            </article><!-- #site-info -->
 
-            <div id="site-info">
-            </div><!-- #site-info -->
-
-    	</div><!-- #colophon -->
-    </div><!-- #footer -->
-</div><!-- #wrapper -->
-</body>
+		    	</section><!-- #colophon -->
+		    </footer><!-- #footer -->
+		</div><!-- #wrapper -->
+	</body>
 </html>
